@@ -8,7 +8,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ url('css/coffee.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url('css/menu.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Pattaya&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Sofia&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Short+Stack&display=swap" rel="stylesheet">
@@ -26,7 +25,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container-fluid">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="photo/aroma_logo1.png"></a>
+                <a class="navbar-brand" href="#"><img src="photo/aroma_logo12.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                     <span class="navbar-toggler-icon"></span>
                 </button>

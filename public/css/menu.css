@@ -153,6 +153,87 @@ p {
 form{
 	padding-bottom: 10rem;
 }
+.bg-video{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.coffee-card{
+	position: relative;
+	box-shadow: 5px 15px 50px #634832;
+	max-width: 420px;
+	transition: all .8s;
+	overflow: hidden;
+	cursor: pointer;
+}
+.card-header .title-text{
+	color: #FF5E18;
+}
+.ratate{
+	perspective: 100rem;
+}
+.back{
+	position: absolute;
+	top: -100%;
+	background: #fff;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	user-select: none;
+	pointer-events: none;
+	transform: rotateY(180deg);
+	transition: top .8s opacity .4s;
+}
+
+.back-content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.rotate:hover .coffee-card{
+	transform: rotateY(180deg);
+}
+.rotate:hover .back{
+	opacity: 1;
+	top: 0;
+	user-select: auto;
+	pointer-events: auto;
+}
+.back-content .btn{
+	color: #dbc1ac;
+}
+.menu_tab {
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.nav-item {
+    display: inline-block;
+    text-align: center;
+}
+
+.nav-tabs .nav-link {
+    transition: .3s;
+}
+
+.nav-tabs .nav-link.active {
+    background: #ffbf00;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #ffbf00;
+    text-transform: capitalize;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-tabs .nav-link:hover {
+    background: #ffbf00;
+    color: #fff;
+    border: 1px solid #ffbf00;
+}
 
 
 
