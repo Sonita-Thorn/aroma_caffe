@@ -83,8 +83,7 @@
 <!--footer-->
 
 @include('components/footer')
-          
-          
+            
           
             </body>
             </html>

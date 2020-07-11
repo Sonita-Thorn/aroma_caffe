@@ -27,3 +27,7 @@ Route::get('/us', function() {
     return view('about_us');
 });
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
