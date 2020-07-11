@@ -20,4 +20,10 @@ Route::resource('products', 'ProductController');
 Route::get('/menu', function () {
     return view('menu');
 });
+Route::get('/join', function() {
+    return view('join_aroma');
+});
+Route::get('/us', function() {
+    return view('about_us');
+});
 
