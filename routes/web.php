@@ -17,7 +17,10 @@ Route::get('/', function () {
     return view('home');
 });
 Route::resource('products', 'ProductController'); 
-Route::get('/menu', function () {
-    return view('menu');
-});
+Route::get('products/{product}', 'ProductController@show')->name('products.show');
+
+// Route::get('/menu', function () {
+//     return view('menu');
+// });
+Route::get('/menu','ProductController@show');
 

@@ -13,7 +13,7 @@
     
     <div class="form-group">
             <strong>Price</strong>
-            <input type="number" name="price" class="form-control" placeholder="Enter Price">
+            <input type="text" name="price" class="form-control" placeholder="Enter Price">
             <span class="text-danger">{{ $errors->first('price') }}</span>
         </div>
 

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use DB;
 use App\Product;
 use Illuminate\Http\Request;
 use Redirect;
@@ -42,6 +42,7 @@ class ProductController extends Controller
         // dd($request->all());
         $request->validate([
             'title' => 'required',
+            'price' => 'required',
             'product_code' => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
             'description' => 'required',
@@ -72,10 +73,7 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Request $request)
-    {
-        
-    }
+    
    
     /**
      * Show the form for editing the specified resource.
@@ -137,4 +135,12 @@ class ProductController extends Controller
   
         return Redirect::to('products')->with('success','Product deleted successfully');
     }
+    
+        public function show()
+        {
+            
+            $product=DB::select('select * from products');
+            return view('menu',['product'=> $product]);
+        }
+    
 }
