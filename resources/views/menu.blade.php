@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url('css/menu.css') }}">
     <title>Menu</title>
 </head>
 
@@ -31,7 +32,8 @@
     <section class="menu">
         <div class="mymenu p-5">
             <div class="video-container">
-                <video class="bg-video" src="photo/menu.mp4" autoplay muted loop>
+                <video class="bg-video"  autoplay muted loop>
+                    <source src="photo/animation.mp4">
                 </video>
             </div>
             <div class="container-fluid">
