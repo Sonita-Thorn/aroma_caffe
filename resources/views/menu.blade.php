@@ -35,40 +35,54 @@
                     <source src="photo/animation.mp4">
                 </video>
             </div>
+            <div class="container-fluid">
+                <!---title-->
+                <div class="row">
+                    <div class="col text-center py-5">
+                        <h1 class="text upercase text-color font-weight-bold">Aroma Menu</h1>
+                    </div>
+                </div>
                 <div class="products text-center">
-                @foreach ($product as $products)
-                    <div class="product">
+               
                     <div class="row justify-content-around align-items-center">
-                    <div class="tab-content col-lg-12" id="myTabContent">
-                        <div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
-                            <div class="row">
-                                <div class="col-xl-3 col-lg-4 col-sm rotate">
-                                    <div class="card text-center mb-3 coffee-card">
-                                        <div class="card-header">
-                                            <h4 class="font-weight-light title-text">{{$products->title}}</h4>
-                                        </div>
-                                        <div class="card-body">
-                                        <img src=" {{ asset('public/image/'. $products->image) }} " alt="file" width="100" height="70px">
-                                        </div>
-                                        <div class="back">
-                                            <div class="back-content">
-                                                <h3 class="mb-3">{{$products->price}}$</h3>
-                                                <h1 class="text-upercase font-weight-light">{{$products->description}}</h1>
+                        <div class="tab-content col-lg-12" id="myTabContent">
+                            <div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
+                                    <div class="row">
+                                        @foreach ($product as $products)
+                                        <div class="product">
+                                        <div class="col-xl-3 col-lg-4 col-sm rotate">
+                                            <div class="card text-center mb-3 coffee-card">
+                                                 <div class="card-header">
+                                                    <h4 class="font-weight-light title-text">{{$products->title}}</h4>
+                                                </div>
+                                                <div class="card-body">
+                                                     <img src=" {{ asset('public/image/'. $products->image) }} " alt="file" width="200px" height="200px">
+                                                </div>
+                                                <div class="back">
+                                                    <div class="back-content">
+                                                        <h3 class="mb-3">{{$products->price}}$.</h3>
+                                                            <h5 class="text-upercase font-weight-light">{{$products->description}}</h5>
                                                
-                                                <a href="#" class="btn hvr-right my-4 text-capitilize">Add to cart</a>
+                                                                <a href="#" class="btn hvr-right my-4 text-capitilize">Add to cart</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                    @endforeach
                                 </div>
+                                
+                                
                             </div>
                         </div>
+                        
                     </div>
                </div>
-            </div>
-                @endforeach
-            </div> <!-- end products -->
-                </div>
-                <div>      
+        </div>
+
+</div>
+                
+                 
     </section>
 
     @include('components/footer')
